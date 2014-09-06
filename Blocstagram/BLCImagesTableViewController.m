@@ -14,6 +14,8 @@
 
 @interface BLCImagesTableViewController ()
 
+@property (nonatomic, strong) NSArray *items;
+
 @end
 
 @implementation BLCImagesTableViewController
@@ -23,6 +25,7 @@
     self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
+        self.items = [BLCDataSource sharedInstance].mediaItems;
     }
     return self;
 }
@@ -41,7 +44,7 @@
 #pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [BLCDataSource sharedInstance].mediaItems.count;
+    return self.items.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -63,14 +66,17 @@
         [cell.contentView addSubview:imageView];
     }
     
-    BLCMedia *item = [BLCDataSource sharedInstance].mediaItems[indexPath.row];
+    BLCMedia *item = self.items[indexPath.row];
+    
+    
+    
     imageView.image = item.image;
     
     return cell;
 }
 
 - (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    BLCMedia *item = [BLCDataSource sharedInstance].mediaItems[indexPath.row];
+    BLCMedia *item = self.items[indexPath.row];
     UIImage *image = item.image;
     
     return (CGRectGetWidth(self.view.frame) / image.size.width) * image.size.height;
