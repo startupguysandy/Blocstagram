@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F1E25D819BBAE4D00DE3A3D /* BLCMediaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1E25D719BBAE4D00DE3A3D /* BLCMediaTableViewCell.m */; };
 		2F41D6D319BB0DEA00AB1621 /* BLCUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F41D6D219BB0DEA00AB1621 /* BLCUser.m */; };
 		2F41D6D619BB0FED00AB1621 /* BLCMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F41D6D519BB0FED00AB1621 /* BLCMedia.m */; };
 		2F41D6D919BB12AA00AB1621 /* BLCComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F41D6D819BB12AA00AB1621 /* BLCComment.m */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F1E25D619BBAE4D00DE3A3D /* BLCMediaTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCMediaTableViewCell.h; sourceTree = "<group>"; };
+		2F1E25D719BBAE4D00DE3A3D /* BLCMediaTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCMediaTableViewCell.m; sourceTree = "<group>"; };
 		2F41D6D119BB0DEA00AB1621 /* BLCUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCUser.h; sourceTree = "<group>"; };
 		2F41D6D219BB0DEA00AB1621 /* BLCUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCUser.m; sourceTree = "<group>"; };
 		2F41D6D419BB0FED00AB1621 /* BLCMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCMedia.h; sourceTree = "<group>"; };
@@ -124,6 +127,8 @@
 				2F41D6D819BB12AA00AB1621 /* BLCComment.m */,
 				2F41D6DA19BB137200AB1621 /* BLCDataSource.h */,
 				2F41D6DB19BB137200AB1621 /* BLCDataSource.m */,
+				2F1E25D619BBAE4D00DE3A3D /* BLCMediaTableViewCell.h */,
+				2F1E25D719BBAE4D00DE3A3D /* BLCMediaTableViewCell.m */,
 			);
 			path = Blocstagram;
 			sourceTree = "<group>";
@@ -285,6 +290,7 @@
 				2FB3010719B513CE00D757A4 /* BLCImagesTableViewController.m in Sources */,
 				2F41D6D619BB0FED00AB1621 /* BLCMedia.m in Sources */,
 				2F41D6D919BB12AA00AB1621 /* BLCComment.m in Sources */,
+				2F1E25D819BBAE4D00DE3A3D /* BLCMediaTableViewCell.m in Sources */,
 				2F41D6DC19BB137200AB1621 /* BLCDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

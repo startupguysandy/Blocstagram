@@ -57,10 +57,11 @@
             NSUInteger commentCount = arc4random_uniform(10);
             NSMutableArray *randomComments = [NSMutableArray array];
             
-            for (int i = 0; i <= commentCount; i++) {
+            for (int i  = 0; i <= commentCount; i++) {
                 BLCComment *randomComment = [self randomComment];
                 [randomComments addObject:randomComment];
             }
+            
             media.comments = randomComments;
             
             [randomMediaItems addObject:media];
@@ -69,6 +70,7 @@
     
     self.mediaItems = randomMediaItems;
 }
+
 - (BLCUser *) randomUser {
     BLCUser *user = [[BLCUser alloc] init];
     
@@ -90,8 +92,8 @@
     
     NSMutableString *randomSentence = [[NSMutableString alloc] init];
     
-    for (int i = 0; i <= wordCount; i++) {
-        NSString *randomWord = [self randomStringOfLength: arc4random_uniform(12)];
+    for (int i  = 0; i <= wordCount; i++) {
+        NSString *randomWord = [self randomStringOfLength:arc4random_uniform(12)];
         [randomSentence appendFormat:@"%@ ", randomWord];
     }
     
