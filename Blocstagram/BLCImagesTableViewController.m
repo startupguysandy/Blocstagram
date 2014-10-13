@@ -26,7 +26,6 @@
     self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
-        self.items = [BLCDataSource sharedInstance].mediaItems;
     }
     return self;
 }
@@ -128,7 +127,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.items.count;
+    return [BLCDataSource sharedInstance].mediaItems.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -139,7 +138,7 @@
 }
 
 - (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    BLCMedia *item = self.items[indexPath.row];
+    BLCMedia *item = [BLCDataSource sharedInstance].mediaItems[indexPath.row];
 
     return [BLCMediaTableViewCell heightForMediaItem:item width:CGRectGetWidth(self.view.frame)];
 }
