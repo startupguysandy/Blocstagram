@@ -12,8 +12,9 @@
 #import "BLCUser.h"
 #import "BLCComment.h"
 #import "BLCMediaTableViewCell.h"
+#import "BLCMediaFullScreenViewController.h"
 
-@interface BLCImagesTableViewController ()
+@interface BLCImagesTableViewController () <BLCMediaTableViewCellDelegate>
 
 @property (nonatomic, strong) NSArray *items;
 
@@ -132,6 +133,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     BLCMediaTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"mediaCell" forIndexPath:indexPath];
+    cell.delegate = self;
     cell.mediaItem = [BLCDataSource sharedInstance].mediaItems[indexPath.row];
     
     return cell;
@@ -152,6 +154,15 @@
         return 150;
     }
 }
+
+#pragma mark - BLCMediaTableViewCellDelegate
+
+- (void) cell:(BLCMediaTableViewCell *)cell didTapImageView:(UIImageView *)imageView {
+    BLCMediaFullScreenViewController *fullScreenVC = [[BLCMediaFullScreenViewController alloc] initWithMedia:cell.mediaItem];
+    
+    [self presentViewController:fullScreenVC animated:YES completion:nil];
+}
+
 
 /*
 // Override to support conditional editing of the table view.
