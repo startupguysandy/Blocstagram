@@ -169,7 +169,7 @@ static NSParagraphStyle *paragraphStyle;
     self.commentLabelHeightConstraint.constant = commentLabelSize.height + 20;
     
     if (_mediaItem.image) {
-        self.imageHeightConstraint.constant = self.mediaItem.image.size.height / self.mediaImageView.image.size.width * CGRectGetWidth(self.contentView.bounds);
+        self.imageHeightConstraint.constant = self.mediaItem.image.size.height / self.mediaItem.image.size.width * CGRectGetWidth(self.contentView.bounds);
     } else {
         self.imageHeightConstraint.constant = 0;
     }
@@ -198,6 +198,12 @@ static NSParagraphStyle *paragraphStyle;
     
     // Get the actual height required for the cell
     return CGRectGetMaxY(layoutCell.commentLabel.frame);
+}
+
+#pragma mark - Image View
+
+- (void) tapFired:(UITapGestureRecognizer *)sender {
+    [self.delegate cell:self didTapImageView:self.mediaImageView];
 }
 
 #pragma mark - UIGestureRecognizerDelegate

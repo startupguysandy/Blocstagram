@@ -15,7 +15,7 @@
 @property (nonatomic, strong) UIScrollView *scrollView;
 @property (nonatomic, strong) UIImageView *imageView;
 
-- (instancetype) initWithMedia:(BLCMediaFullScreenViewController *)media;
+- (instancetype) initWithMedia:(BLCMedia *)media;
 
 - (void) centerScrollView;
 

@@ -66,6 +66,11 @@
                         [self willChangeValueForKey:@"mediaItems"];
                         self.mediaItems = mutableMediaItems;
                         [self didChangeValueForKey:@"mediaItems"];
+                        
+                        for (BLCMedia* item in self.mediaItems)
+                        {
+                            [self downloadImageForMediaItem:item];
+                        }
                     } else {
                         [self populateDataWithParameters:nil completionHandler:nil];
                     }
@@ -80,7 +85,7 @@
 - (void) registerForAccessTokenNotification {
     [[NSNotificationCenter defaultCenter] addObserverForName:BLCLoginViewControllerDidGetAccessTokenNotification object:nil queue:nil usingBlock:^(NSNotification *note) {
         self.accessToken = note.object;
-        
+        [UICKeyChainStore setString:self.accessToken forKey:@"access token"];
         // Got a token, populate the initial data
         [self populateDataWithParameters:nil completionHandler:nil];
     }];
