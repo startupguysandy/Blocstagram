@@ -82,6 +82,12 @@
         contentsFrame.origin.x = 0;
     }
     
+    if (contentsFrame.size.height < boundsSize.height) {
+        contentsFrame.origin.y = (boundsSize.height - CGRectGetHeight(contentsFrame)) / 2;
+    } else {
+        contentsFrame.origin.y = 0;
+    }
+    
     self.imageView.frame = contentsFrame;
 }
 
