@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F01D3C61A65193E001D8543 /* BLCCropBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F01D3C51A65193E001D8543 /* BLCCropBox.m */; };
+		2F01D3C91A652307001D8543 /* BLCCropImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F01D3C81A652307001D8543 /* BLCCropImageViewController.m */; };
 		2F1E25D819BBAE4D00DE3A3D /* BLCMediaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1E25D719BBAE4D00DE3A3D /* BLCMediaTableViewCell.m */; };
+		2F3B4A151A665DB700450152 /* BLCImageLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F3B4A141A665DB700450152 /* BLCImageLibraryViewController.m */; };
 		2F41D6D319BB0DEA00AB1621 /* BLCUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F41D6D219BB0DEA00AB1621 /* BLCUser.m */; };
 		2F41D6D619BB0FED00AB1621 /* BLCMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F41D6D519BB0FED00AB1621 /* BLCMedia.m */; };
 		2F41D6D919BB12AA00AB1621 /* BLCComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F41D6D819BB12AA00AB1621 /* BLCComment.m */; };
@@ -52,8 +55,14 @@
 /* Begin PBXFileReference section */
 		0BD9CEABC4214F16F9014BED /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		1A5BB38637E41CE0CB873FF4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F01D3C41A65193E001D8543 /* BLCCropBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLCCropBox.h; path = ../BLCCropBox.h; sourceTree = "<group>"; };
+		2F01D3C51A65193E001D8543 /* BLCCropBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BLCCropBox.m; path = ../BLCCropBox.m; sourceTree = "<group>"; };
+		2F01D3C71A652307001D8543 /* BLCCropImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCCropImageViewController.h; sourceTree = "<group>"; };
+		2F01D3C81A652307001D8543 /* BLCCropImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCCropImageViewController.m; sourceTree = "<group>"; };
 		2F1E25D619BBAE4D00DE3A3D /* BLCMediaTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCMediaTableViewCell.h; sourceTree = "<group>"; };
 		2F1E25D719BBAE4D00DE3A3D /* BLCMediaTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCMediaTableViewCell.m; sourceTree = "<group>"; };
+		2F3B4A131A665DB700450152 /* BLCImageLibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCImageLibraryViewController.h; sourceTree = "<group>"; };
+		2F3B4A141A665DB700450152 /* BLCImageLibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCImageLibraryViewController.m; sourceTree = "<group>"; };
 		2F41D6D119BB0DEA00AB1621 /* BLCUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCUser.h; sourceTree = "<group>"; };
 		2F41D6D219BB0DEA00AB1621 /* BLCUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCUser.m; sourceTree = "<group>"; };
 		2F41D6D419BB0FED00AB1621 /* BLCMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCMedia.h; sourceTree = "<group>"; };
@@ -157,6 +166,10 @@
 				2F855CA419FAB97C00078047 /* BLCMediaFullScreenViewController.m */,
 				2FAE0F891A22239800A15B32 /* BLCCameraViewController.h */,
 				2FAE0F8A1A22239800A15B32 /* BLCCameraViewController.m */,
+				2F01D3C71A652307001D8543 /* BLCCropImageViewController.h */,
+				2F01D3C81A652307001D8543 /* BLCCropImageViewController.m */,
+				2F3B4A131A665DB700450152 /* BLCImageLibraryViewController.h */,
+				2F3B4A141A665DB700450152 /* BLCImageLibraryViewController.m */,
 				2F41D6D119BB0DEA00AB1621 /* BLCUser.h */,
 				2F41D6D219BB0DEA00AB1621 /* BLCUser.m */,
 				2F41D6D419BB0FED00AB1621 /* BLCMedia.h */,
@@ -173,6 +186,8 @@
 				2F50FB1B19FEF61B00F46C83 /* BLCMediaFullScreenAnimator.m */,
 				2FAE0F861A2204F700A15B32 /* BLCCameraToolbar.h */,
 				2FAE0F871A2204F700A15B32 /* BLCCameraToolbar.m */,
+				2F01D3C41A65193E001D8543 /* BLCCropBox.h */,
+				2F01D3C51A65193E001D8543 /* BLCCropBox.m */,
 				2F59269D1A0F9D8A008077F5 /* BLCCircleSpinnerView.h */,
 				2F59269E1A0F9D8A008077F5 /* BLCCircleSpinnerView.m */,
 				2F5926A01A0FD74F008077F5 /* BLCLikeButton.h */,
@@ -389,6 +404,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F01D3C91A652307001D8543 /* BLCCropImageViewController.m in Sources */,
 				2F41D6D319BB0DEA00AB1621 /* BLCUser.m in Sources */,
 				2FAE0F881A2204F700A15B32 /* BLCCameraToolbar.m in Sources */,
 				2F50FB1C19FEF61B00F46C83 /* BLCMediaFullScreenAnimator.m in Sources */,
@@ -398,10 +414,12 @@
 				2FB3010719B513CE00D757A4 /* BLCImagesTableViewController.m in Sources */,
 				2F41D6D619BB0FED00AB1621 /* BLCMedia.m in Sources */,
 				2F59269F1A0F9D8A008077F5 /* BLCCircleSpinnerView.m in Sources */,
+				2F3B4A151A665DB700450152 /* BLCImageLibraryViewController.m in Sources */,
 				2F41D6D919BB12AA00AB1621 /* BLCComment.m in Sources */,
 				2F855CA519FAB97C00078047 /* BLCMediaFullScreenViewController.m in Sources */,
 				2F1E25D819BBAE4D00DE3A3D /* BLCMediaTableViewCell.m in Sources */,
 				2F41D6DC19BB137200AB1621 /* BLCDataSource.m in Sources */,
+				2F01D3C61A65193E001D8543 /* BLCCropBox.m in Sources */,
 				2FAE0F8B1A22239800A15B32 /* BLCCameraViewController.m in Sources */,
 				2FEBE2A419D1B3C700711F6B /* BLCLoginViewController.m in Sources */,
 				2F5926A51A0FFEE1008077F5 /* BLCComposeCommentView.m in Sources */,
@@ -515,6 +533,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Blocstagram/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -530,6 +549,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Blocstagram/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
