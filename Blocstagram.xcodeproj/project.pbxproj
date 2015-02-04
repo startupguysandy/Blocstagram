@@ -38,6 +38,7 @@
 		2FB3010319B5134B00D757A4 /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FB300F919B5134B00D757A4 /* 9.jpg */; };
 		2FB3010419B5134B00D757A4 /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FB300FA19B5134B00D757A4 /* 10.jpg */; };
 		2FB3010719B513CE00D757A4 /* BLCImagesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB3010619B513CE00D757A4 /* BLCImagesTableViewController.m */; };
+		2FCE656E1A7B8249006FA661 /* BLCPostToInstagramViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE656D1A7B8249006FA661 /* BLCPostToInstagramViewController.m */; };
 		2FEBE2A419D1B3C700711F6B /* BLCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBE2A319D1B3C700711F6B /* BLCLoginViewController.m */; };
 		A21C33EFF80069952F836014 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A5BB38637E41CE0CB873FF4 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -108,6 +109,8 @@
 		2FB300FA19B5134B00D757A4 /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
 		2FB3010519B513CE00D757A4 /* BLCImagesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCImagesTableViewController.h; sourceTree = "<group>"; };
 		2FB3010619B513CE00D757A4 /* BLCImagesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCImagesTableViewController.m; sourceTree = "<group>"; };
+		2FCE656C1A7B8249006FA661 /* BLCPostToInstagramViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCPostToInstagramViewController.h; sourceTree = "<group>"; };
+		2FCE656D1A7B8249006FA661 /* BLCPostToInstagramViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCPostToInstagramViewController.m; sourceTree = "<group>"; };
 		2FEBE2A219D1B3C700711F6B /* BLCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCLoginViewController.h; sourceTree = "<group>"; };
 		2FEBE2A319D1B3C700711F6B /* BLCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCLoginViewController.m; sourceTree = "<group>"; };
 		ED709052ECCBEB07DB81BB63 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -162,6 +165,8 @@
 				2FB3010619B513CE00D757A4 /* BLCImagesTableViewController.m */,
 				2FEBE2A219D1B3C700711F6B /* BLCLoginViewController.h */,
 				2FEBE2A319D1B3C700711F6B /* BLCLoginViewController.m */,
+				2FCE656C1A7B8249006FA661 /* BLCPostToInstagramViewController.h */,
+				2FCE656D1A7B8249006FA661 /* BLCPostToInstagramViewController.m */,
 				2F855CA319FAB97C00078047 /* BLCMediaFullScreenViewController.h */,
 				2F855CA419FAB97C00078047 /* BLCMediaFullScreenViewController.m */,
 				2FAE0F891A22239800A15B32 /* BLCCameraViewController.h */,
@@ -423,6 +428,7 @@
 				2FAE0F8B1A22239800A15B32 /* BLCCameraViewController.m in Sources */,
 				2FEBE2A419D1B3C700711F6B /* BLCLoginViewController.m in Sources */,
 				2F5926A51A0FFEE1008077F5 /* BLCComposeCommentView.m in Sources */,
+				2FCE656E1A7B8249006FA661 /* BLCPostToInstagramViewController.m in Sources */,
 				2FAE0F8E1A22478100A15B32 /* UIImage+BLCImageUtilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
