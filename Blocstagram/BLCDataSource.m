@@ -32,6 +32,8 @@
 
 @implementation BLCDataSource
 
+NSString *const BLCImageFinishedNotification = @"BLCImageFinishedNotification";
+
 + (instancetype) sharedInstance {
     // This variable stores the completion status of the dispatch_once task
     static dispatch_once_t once;

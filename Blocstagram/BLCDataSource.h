@@ -14,7 +14,10 @@ typedef void (^BLCNewItemCompletionBlock)(NSError *error);
 
 @interface BLCDataSource : NSObject
 
+extern NSString *const BLCImageFinishedNotification;
+
 +(instancetype) sharedInstance;
++ (NSString *) instagramClientID;
 
 @property (nonatomic, strong, readonly) NSArray *mediaItems;
 @property (nonatomic, strong, readonly) NSString *accessToken;
@@ -28,7 +31,5 @@ typedef void (^BLCNewItemCompletionBlock)(NSError *error);
 
 - (void) toggleLikeOnMediaItem:(BLCMedia *)mediaItem;
 - (void) commentOnMediaItem:(BLCMedia *)mediaItem withCommentText:(NSString *)commentText;
-
-+ (NSString *) instagramClientID;
 
 @end
