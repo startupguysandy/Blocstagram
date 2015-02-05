@@ -38,6 +38,8 @@
 		2FB3010319B5134B00D757A4 /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FB300F919B5134B00D757A4 /* 9.jpg */; };
 		2FB3010419B5134B00D757A4 /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2FB300FA19B5134B00D757A4 /* 10.jpg */; };
 		2FB3010719B513CE00D757A4 /* BLCImagesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB3010619B513CE00D757A4 /* BLCImagesTableViewController.m */; };
+		2FC122A41A8362230088CAD4 /* BLCUserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC122A31A8362230088CAD4 /* BLCUserTests.m */; };
+		2FC122A81A8364A50088CAD4 /* BLCCommentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC122A71A8364A50088CAD4 /* BLCCommentTests.m */; };
 		2FCE656E1A7B8249006FA661 /* BLCPostToInstagramViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE656D1A7B8249006FA661 /* BLCPostToInstagramViewController.m */; };
 		2FEBE2A419D1B3C700711F6B /* BLCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBE2A319D1B3C700711F6B /* BLCLoginViewController.m */; };
 		A21C33EFF80069952F836014 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A5BB38637E41CE0CB873FF4 /* libPods.a */; };
@@ -110,6 +112,8 @@
 		2FB3010519B513CE00D757A4 /* BLCImagesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCImagesTableViewController.h; sourceTree = "<group>"; };
 		2FB3010619B513CE00D757A4 /* BLCImagesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCImagesTableViewController.m; sourceTree = "<group>"; };
 		2FC122A21A82CA510088CAD4 /* Blocstagram-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Blocstagram-Prefix.pch"; sourceTree = "<group>"; };
+		2FC122A31A8362230088CAD4 /* BLCUserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCUserTests.m; sourceTree = "<group>"; };
+		2FC122A71A8364A50088CAD4 /* BLCCommentTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCCommentTests.m; sourceTree = "<group>"; };
 		2FCE656C1A7B8249006FA661 /* BLCPostToInstagramViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCPostToInstagramViewController.h; sourceTree = "<group>"; };
 		2FCE656D1A7B8249006FA661 /* BLCPostToInstagramViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCPostToInstagramViewController.m; sourceTree = "<group>"; };
 		2FEBE2A219D1B3C700711F6B /* BLCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCLoginViewController.h; sourceTree = "<group>"; };
@@ -220,6 +224,8 @@
 			isa = PBXGroup;
 			children = (
 				2FB300E619B5127E00D757A4 /* BlocstagramTests.m */,
+				2FC122A31A8362230088CAD4 /* BLCUserTests.m */,
+				2FC122A71A8364A50088CAD4 /* BLCCommentTests.m */,
 				2FB300E419B5127E00D757A4 /* Supporting Files */,
 			);
 			path = BlocstagramTests;
@@ -439,7 +445,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FC122A41A8362230088CAD4 /* BLCUserTests.m in Sources */,
 				2FB300E719B5127E00D757A4 /* BlocstagramTests.m in Sources */,
+				2FC122A81A8364A50088CAD4 /* BLCCommentTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
